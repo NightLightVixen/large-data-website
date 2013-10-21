@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a:link { 
+	color: #CCC;
+	text-decoration:none;
+	}
+a:visited { 
+	color: #fff;
+	text-decoration:none;
+	}
+a:hover { 
+	color: #300;
+	background-color: #CCC;
+	text-decoration: none;
+	}
+a:active { 
+	color: #333333;
+	text-decoration:none;
+	}
+	
+/*----- Body -----*/
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #300;
+}
+
+header {
+	text-align: center;
+}
+
+
+
+.searchbar {
+	color: #CCC;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	padding-bottom: 15px;
+}
+
+/*----- Navigation -----*/
+
+nav a {
+
+	padding: .5em 0;
+	margin-left: 2px;
+	margin-right: 2px;
+	display: inline-block;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.unit {
+	font-family: "MS Serif", "New York", serif;
+	color: #FFF;
+	letter-spacing: 1px;
+	background-color: #600;
+	margin: 3px;
+}
+
+h1 {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+/*----- Content -----*/
+
+.content {
+	visibility: hidden;
+}
+
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	text-align:left;
+	color: #999;
+}
+
+
+.flex-img {
+	display:inline-block;
+	width: 100%;
+}
+	
+
+.intro {
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+
+}
+
+
+h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	line-height: 25px;
+	text-align:left;
+	color: #FFF;
+}
+
+.spacer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 5px;
+}
+
+/*----- Footer -----*/
+
+footer {
+	font-size: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #CCC;
+	background-color: #600;
+}
+
+/*----------------- Media Queries -------------------*/
+
+@media screen and (min-width: 470px) {
+	
+	a:link { 
+		color: #CCC;
+		text-decoration:none;
+	}
+	a:visited { 
+		color: #fff;
+		text-decoration:none;
+	}
+	a:hover { 
+		color: #900;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:active { 
+		color: #333333;
+		text-decoration:none;
+	}
+	
+	.top {
+		display: block;
+		
+	}
+	
+	/*----- Navigation -----*/
+	
+
+	nav a {
+
+		padding: .5em 0;
+		margin-left: 1px;
+		margin-right: 1px;
+		display: inline-block;
+	}
+
+	.unit {
+		display: inline-block;
+		font-family: "MS Serif", "New York", serif;
+		text-align: center;
+		color: #FFF;
+		letter-spacing: 1px;
+		background-color: transparent;
+		padding-right: 4px;
+		padding-left: 4px;
+		margin: 1px;
+		
+	}
+
+	h1 {
+		margin: 0;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	
+	.top {
+		display: block;
+		float: left;
+		
+	}
+	
+	.content {
+	visibility: visible;
+	}
+	
+	.spacer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 5px;
+	}
+	
+	
+	.logo {
+		display: inline-block;
+		float: left;
+	}
+	
+	.navbox {
+		display: inline-block;
+		margin-top: 125px;
+	}
+	
+	nav a {
+
+		padding: .5em 0;
+		margin-left: 1px;
+		margin-right: 1px;
+		display: inline-block;
+	}
+
+	.unit {
+		display: inline-block;
+		font-family: "MS Serif", "New York", serif;
+		text-align: center;
+		color: #FFF;
+		letter-spacing: 1px;
+		background-color: transparent;
+		padding-right: 4px;
+		padding-left: 4px;
+		margin: 1px;
+		
+	}
+
+	h1 {
+		margin: 0;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
