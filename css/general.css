@@ -24,8 +24,8 @@ a:visited {
 	text-decoration:none;
 	}
 a:hover { 
-	color: #300;
-	background-color: #CCC;
+	color: none;
+	background-color: none;
 	text-decoration: none;
 	}
 a:active { 
