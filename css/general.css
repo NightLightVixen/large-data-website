@@ -20,11 +20,11 @@ a:link {
 	text-decoration:none;
 	}
 a:visited { 
-	color: #fff;
+	color: #CCC;
 	text-decoration:none;
 	}
 a:hover { 
-	color: none;
+	color: #F60;
 	background-color: none;
 	text-decoration: none;
 	}
@@ -38,7 +38,7 @@ a:active {
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #300;
+	background-color: #666;
 }
 
 header {
@@ -66,11 +66,11 @@ nav a {
 	min-height: 100%;
 }
 
-.unit {
+.navpage {
 	font-family: "MS Serif", "New York", serif;
 	color: #FFF;
 	letter-spacing: 1px;
-	background-color: #600;
+	background-color: #333;
 	margin: 3px;
 }
 
@@ -83,19 +83,23 @@ h1 {
 /*----- Content -----*/
 
 .content {
-	visibility: hidden;
+	visibility: visible;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 6px;
 }
 
 p {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-family:arial, Helvetica, sans-serif;
+	font-size: 15px;
 	line-height: 19px;
+	letter-spacing: 1px;
 	text-align:left;
-	color: #999;
+	color: #CCC;
 }
 
 
-.flex-img {
+.home-img {
 	display:inline-block;
 	width: 100%;
 }
@@ -124,6 +128,50 @@ h2 {
 	margin: 5px;
 }
 
+/*----- Grid -----*/
+
+.grid {
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+  text-rendering: optimizespeed;
+  margin-top: 15px;
+}
+.opera-only :-o-prefocus,
+.grid {
+  word-spacing: -0.43em;
+}
+
+.flex-img {
+	filter:url(http://static.tumblr.com/eptm5us/ueTmafr4p/filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+   
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	display:inline-block;
+	width: 100%;
+}
+
+.flex-img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+.unit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+}
+.unit-spacer {
+  padding: 8px;
+}
+
 /*----- Footer -----*/
 
 footer {
@@ -134,7 +182,7 @@ footer {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: #CCC;
-	background-color: #600;
+	background-color: #333;
 }
 
 /*----------------- Media Queries -------------------*/
@@ -175,7 +223,7 @@ footer {
 		display: inline-block;
 	}
 
-	.unit {
+	.navpage {
 		display: inline-block;
 		font-family: "MS Serif", "New York", serif;
 		text-align: center;
@@ -192,6 +240,10 @@ footer {
 		margin: 0;
 		padding-top: 20px;
 		padding-bottom: 5px;
+	}
+	
+	.content {
+	visibility: visible;
 	}
 }
 
@@ -232,7 +284,7 @@ footer {
 		display: inline-block;
 	}
 
-	.unit {
+	.navpage {
 		display: inline-block;
 		font-family: "MS Serif", "New York", serif;
 		text-align: center;
