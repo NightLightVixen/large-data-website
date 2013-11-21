@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	
+	background: url(../images/oopsowl.jpg) no-repeat center center fixed;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a:link { 
+	color: #fff;
+	text-decoration:none;
+	}
+a:visited { 
+	color: none;
+	text-decoration:none;
+	}
+a:hover { 
+	color: none;
+	background-color: none;
+	text-decoration: none;
+	}
+a:active { 
+	color: #333333;
+	text-decoration:none;
+	}
+
+.navpage {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:2em;
+	margin-left: 50%;
+	margin-top: 30%;
+	
+}
