@@ -466,3 +466,16 @@ url(http://static.tumblr.com/eptm5us/ueTmafr4p/filters.svg#grayscale); /* Firefo
 	padding-bottom: 10px;
 	margin: 5px;
 }
+
+
+@media screen and (min-width: 1000px) {
+	
+	.content {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+	
+	.displayimage {
+		float: left;
+		margin: 10px;
+	}
