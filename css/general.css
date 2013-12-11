@@ -157,6 +157,12 @@ h2 {
 	margin: 5px;
 }
 
+h1 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #fff;
+	font-size:25px;
+}
+
 /*----- Grid -----*/
 
 .grid {
@@ -473,6 +479,7 @@ url(http://static.tumblr.com/eptm5us/ueTmafr4p/filters.svg#grayscale); /* Firefo
 	.content {
 		padding-left: 200px;
 		padding-right: 200px;
+		padding-bottom: 110px;
 	}
 	
 	.displayimage {
